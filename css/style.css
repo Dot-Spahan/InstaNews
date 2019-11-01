@@ -1,10 +1,9 @@
 body {
     background: black;
+    font-family: Open Sans-light;
     color: white;
-    font-family:Open Sans-light; 
-    color: #ffffff;
     align-content: center;
-    display: block;
+    display: flex;
     
 }
 
@@ -34,6 +33,11 @@ body {
     text-align: center;
     background-color: black;
 }
+img {
+    height: 220px;
+    width: 220px;
+    background-size: contain;
+}
 
 .content {
     border: 10px solid black;
@@ -60,10 +64,16 @@ body {
 
     .content {
         margin: 0;
+        align-items: baseline;
     }
+
+    .nyt-articles {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        flex-direction: column;
   
-
-
+}
+}
 @media screen and (min-width: 1000px) {
         .container {
             display: flex;
@@ -73,8 +83,11 @@ body {
             align-content: center;
             flex-direction: column;
         }
-
-
+        .nyt-articles {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+}
 .copyright {
     border: 5px solid black;
     width: 200;
@@ -88,10 +101,14 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 
+
 }
 
 .stories {
     background-size: cover;
     height: 400px;
-    align-items: baseline;
+    text-align: center;
+    color: white;
+
     }
+
