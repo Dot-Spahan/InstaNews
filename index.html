@@ -8,51 +8,52 @@
 
     <title>InstaNews Project 3</title>
     <link rel="stylesheet" href="./css/style.css">
+
 </head>
 
 <body>
     <div class="container">
 
-        <header class="header"> 
+        <header class="header">
             <div class="logo">
-                <img src="../InstaNews2/assets/images/nyt-logo.svg" alt="New York Times" />
+                <img src="../InstaNews2/assets/images/nyt-logo.svg" alt="New York Times Logo">
             </div>
-            
-            <div class="content">
-                <div>
-                    <p>Choose a section:</p>
-                    <select name="sections" id="sections">
-                        <option value="">Sections ...</option>
-                        <option value="home">Home</option>
-                        <option value="arts">Arts</option>
-                        <option value="business">Business</option>
-                        <option value="sports">Sports</option>
-                        <option value="technology">Technology</option>
-                        <option value="fashion">Fashion</option>
-                    </select>
-                </div>
-            </div>
-        
-        
-        
         </header>
 
+        <section id="nyt-articles" class="nyt-articles">
+            <img src="../InstaNews2/assets/images/ajax-loader.gif" alt="Loading..." class="ajax-loader"
+                style="display: none;">
+        </section>
 
-        <footer>
-            <div class="copyright">
-                <span>&copy; Copyright 2019 INSTANEWS</span>
+        <div class="content">
+            <div>
+                <p>Choose a section:</p>
+                <select name="sections" id="sections">
+                    <option value="">Sections ...</option>
+                    <option value="home">Home</option>
+                    <option value="arts">Arts</option>
+                    <option value="business">Business</option>
+                    <option value="sports">Sports</option>
+                    <option value="technology">Technology</option>
+                    <option value="fashion">Fashion</option>
+                </select>      
             </div>
-
-        </footer>
-
-
+        </div>
 
     </div>
 
 
+    <footer>
+        <div class="copyright">
+            <span>&copy; Copyright 2019 INSTANEWS</span>
+        </div>
+    </footer>
 
 
 
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="./build/js/script.min.js"></script>
 
 </body>
