@@ -14,10 +14,10 @@ document.addEventListener("DOMContentLoaded", function() {
             console.log(results);
 
             $.each(results, function(index, value) {
-                $("#nyt-articles").append(`
+                $(".nyt-articles").append(`
                 <a href="${value.url}">
-                    <article class="stories" style="background-image:url(${value.multimedia[4].url});">      
-                        <p>${value.abstract}</p>
+                    <article class="stories" style="background-image:url(${value.multimedia[4].url}); position: relative">      
+                        <p class="stories-description">${value.abstract}</p>
                     </article>
                 </a>
                 

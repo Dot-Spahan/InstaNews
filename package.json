@@ -24,5 +24,14 @@
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2",
     "gulp-terser": "^1.2.0"
-  }
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dot-Spahan/Instanews.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Dot-Spahan/Instanews/issues"
+  },
+  "homepage": "https://github.com/Dot-Spahan/Instanews#readme"
 }
